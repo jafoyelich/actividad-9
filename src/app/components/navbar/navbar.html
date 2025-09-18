@@ -1,0 +1,16 @@
+<header class="navbar">
+  <div class="container">
+    <a class="logo" href="#">Jafet</a>
+    <button class="burger" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="menu" [ngClass]="{'open': isMenuOpen}">
+      <button class="close-btn" (click)="closeMenu()" aria-label="Cerrar menú">✕</button>
+      <a href="#home">Inicio</a>
+      <a href="about">Acerca de</a>
+      <a href="portfolio">Portafolio</a>
+    </nav>
+  </div>
+</header>

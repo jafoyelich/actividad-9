@@ -1,0 +1,58 @@
+.about {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+
+  .about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-image {
+    flex: 1 1 350px;
+
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .about-text {
+    flex: 1 1 500px;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0b57d0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-stats {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+
+      li {
+        font-size: 1.2rem;
+        color: #222;
+
+        strong {
+          display: block;
+          font-size: 1.5rem;
+          color: #0b57d0;
+        }
+      }
+    }
+  }
+}
