@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Immediate redirect to the app root for GitHub Pages SPA fallback -->
+  <meta http-equiv="refresh" content="0; url=/jafet-portfolio/" />
+  <script>
+    // More robust redirect preserving path/query/hash within the repo subpath
+    (function() {
+      var repo = '/jafet-portfolio/';
+      // Remove leading repo segment if already present to avoid duplication
+      var path = location.pathname;
+      if (path.indexOf(repo) !== 0) {
+        // Trim leading slash, then prepend repo
+        var trimmed = path.replace(/^\//, '');
+        var target = repo + trimmed;
+        location.replace(target + location.search + location.hash);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting…</p>
+</body>
+</html>
